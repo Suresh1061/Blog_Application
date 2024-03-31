@@ -3,7 +3,7 @@ import { Login } from '../components'
 
 const LoginPage = () => {
   return (
-    <div className=' my-8'>
+    <div className=' my-8 px-2'>
       <Login />
     </div>
   )

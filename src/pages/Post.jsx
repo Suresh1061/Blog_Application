@@ -47,15 +47,15 @@ function Post() {
 
   return post ? (
     <div className="py-8">
-      <Container >
-        <div className="max-w-5xl mb-4 relative rounded-xl p-2">
+      <Container>
+        <div className="max-w-5xl mb-4  rounded-xl p-2">
           <img
             src={appwriteService.getFilePreview(post.featuredImage)}
             alt={post.title}
             className="rounded-xl"
           />
         </div>
-        <div className=" text-white px-3">
+        <div className=" text-white px-3 max-w-5xl">
           <div className=" flex justify-between items-center">
               <h1 className="md:text-3xl text-2xl font-bold py-2 capitalize">{post.title}</h1>
             {isAuthor && (

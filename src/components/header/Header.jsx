@@ -91,7 +91,10 @@ const Header = () => {
                                     <div key={item.name}>
                                         <NavLink to={item.slug}
                                             className={({ isActive }) => `${isActive ? "text-violet-600" : "text-white"} hover:text-violet-600 font-semibold text-lg py-6 `}
-                                            onClick={() => navigate(item.slug)}
+                                            onClick={() => {
+                                                navigate(item.slug)
+                                                setOpenMenu(true)
+                                            }}
                                         >
                                             {item.name}
                                         </NavLink>
@@ -99,7 +102,9 @@ const Header = () => {
                                 ) : null
                             )}
                             {authStatus && (
-                                <div className='mt-10 flex justify-center items-center gap-2 text-white border border-blue-600 text-lg rounded-md px-4 py-1.5 font-semibold'>
+                                <div
+                                    onClick={() => setOpenMenu(true)}
+                                    className='mt-10 flex justify-center items-center gap-2 text-white border border-blue-600 text-lg rounded-md px-4 py-1.5 font-semibold'>
                                     <MdOutlineLogout size={20} />
                                     <LogoutButton />
                                 </div>
