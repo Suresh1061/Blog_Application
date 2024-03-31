@@ -85,7 +85,7 @@ const Header = () => {
 
                     {/* for small devices */}
                     {!openMenu && (
-                        <div className=' fixed top-[60px] right-0 w-1/2 h-screen bg-[#19191d] flex sm:hidden flex-col items-center gap-6 pt-10'>
+                        <div className=' fixed top-[60px] right-0 w-2/3 h-screen bg-[#19191d] flex sm:hidden flex-col items-center gap-6 pt-10 border-l border-gray-600'>
                             {naveItems.map((item) =>
                                 item.active ? (
                                     <div key={item.name}>
