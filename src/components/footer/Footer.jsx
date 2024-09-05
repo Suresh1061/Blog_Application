@@ -13,7 +13,7 @@ function Footer() {
               </div>
               <div>
                 <p className="text-sm text-slate-400">
-                  &copy; Copyright 2023. All Rights Reserved by Hruthik.
+                  &copy; Copyright 2023. All Rights Reserved by Suresh Pal.
                 </p>
               </div>
             </div>

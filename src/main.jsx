@@ -8,46 +8,6 @@ import { AuthLayout } from "./components"
 import store from './store/store.js'
 import { Provider } from 'react-redux'
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route path='/' element={<App />} >
-//       <Route path='' element={<Home />} />
-//       <Route path='/login'
-//         element={
-//           <AuthLayout authentication={false}>
-//             <LoginPage />
-//           </AuthLayout>
-//         } />
-//       <Route path='/signup'
-//         element={
-//           <AuthLayout authentication={false}>
-//             <SignupPage />
-//           </AuthLayout>
-//         } />
-//       <Route path='/allposts'
-//         element={
-//           <AuthLayout authenticatio>
-//             <AllPosts />
-//           </AuthLayout>
-//         } />
-//       <Route path='/addposts'
-//         element={
-//           <AuthLayout authenticatio>
-//             <AddPost />
-//           </AuthLayout>
-//         } />
-//       <Route path='/edit-post/:slug'
-//         element={
-//           <AuthLayout authenticatio>
-//             <EditPost />
-//           </AuthLayout>
-//         } />
-//       <Route path='/post/:slug'
-//         element={<Post />} />
-//     </Route>
-//   )
-// )
-
 const router = createBrowserRouter([
   {
     path: "/",
